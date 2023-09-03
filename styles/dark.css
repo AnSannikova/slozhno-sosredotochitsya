@@ -9,6 +9,10 @@
   color: var(--accent-color, #FF0070);
 }
 
+.theme_dark .title-big {
+  text-shadow: 4px 4px 0 var(--accent-color, #FF0070);
+}
+
 .theme_dark .header__theme-menu-button {
   color: var(--accent-color, #FF0070);
 }
@@ -46,7 +50,7 @@
   :root {
     --text-color: #F1B2CE;
     --accent-color: #FF0070;
-    --main-title-color: #DB00FF;    
+    --main-title-color: #DB00FF;
   }
 
 }
