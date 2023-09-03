@@ -242,7 +242,7 @@
     grid-column: span 2;
   }
 
-  .section__content-item, .text-block {
+  .text-block {
     grid-column: 1 / -1;
   }
 
@@ -271,7 +271,7 @@
 
 @media (width >= 1024px) {
 
-  .obstacles__content-item, .obstacles__text-block {
+  .obstacles__text-block {
     grid-column: span 1;
   }
 
