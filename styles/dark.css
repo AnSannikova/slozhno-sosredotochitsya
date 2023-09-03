@@ -2,11 +2,16 @@
   --text-color: #F1B2CE;
   --accent-color: #FF0070;
   --main-title-color: #DB00FF;
+  --title-color-dark-theme: #000028;
   background-image: url(../images/cover-image-dark.png);
 }
 
 .theme_dark .decorated-zone {
   color: var(--accent-color, #FF0070);
+}
+
+.theme_dark .title-big {
+  color: var(--main-title-color, #DB00FF);
 }
 
 .theme_dark .header__title {
