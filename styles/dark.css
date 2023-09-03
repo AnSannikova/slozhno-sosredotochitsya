@@ -4,6 +4,7 @@
   --main-title-color: #DB00FF;
   --title-color-dark-theme: #000028;
   background-image: url(../images/cover-image-dark.png);
+  color: var(--text-color, #F1B2CE);
 }
 
 .theme_dark .decorated-zone {
