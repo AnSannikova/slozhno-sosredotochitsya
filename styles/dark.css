@@ -47,6 +47,14 @@
   filter: drop-shadow(0 0 4px var(--accent-color, #FF0070));
 } 
 
+@media (width >= 768px) {
+
+  .page.theme_dark .decorative-lettering {
+    inset-block-start: 20px;
+  }
+
+}
+
 .theme_dark .section__title {
   color: var(--accent-color, #FF0070);
 }
@@ -69,14 +77,6 @@
     --text-color: #F1B2CE;
     --accent-color: #FF0070;
     --main-title-color: #DB00FF;
-  }
-
-}
-
-@media (width >= 768px) {
-
-  .page.theme_dark .decorative-lettering {
-    inset-block-start: 20px;
   }
 
 }
