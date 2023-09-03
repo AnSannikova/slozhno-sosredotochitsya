@@ -11,13 +11,41 @@
   background-image: url(../images/cover-image-dark.png);
 }
 
-.header__theme-menu-button {
+.theme_dark .decorated-zone {
   color: var(--accent-color, #FF0070);
 }
 
-.header__subtitle {
+.theme_dark .header__theme-menu-button {
+  color: var(--accent-color, #FF0070);
+}
+
+.theme_dark .title-decor {
   color: var(--title-color-dark-theme, #000028);
 }
+
+.theme_dark .decorative-lettering {
+  opacity: 1;
+  visibility: visible;
+  inset-block-start: 10px;
+  inset-inline-end: 9px;
+  color: var(--accent-color, #FF0070);
+}
+
+.decorative-lettering::after {
+  content: '';
+  display: inline-block;
+  block-size: 9px;
+  inline-size: 9px;
+  border-radius: 50%;
+  margin-inline-start: 10px;
+  background: var(--accent-color, #FF0070);
+  filter: drop-shadow(0 0 4px var(--accent-color, #FF0070));
+} 
+
+.theme_dark .section__title {
+  color: var(--accent-color, #FF0070);
+}
+
 
 @media (prefers-color-scheme: dark) {
 
@@ -26,4 +54,12 @@
     --accent-color: #FF0070;
     --main-title-color: #DB00FF;    
   }
+}
+
+@media (width >= 768px) {
+
+  .page.theme_dark .decorative-lettering {
+    inset-block-start: 20px;
+  }
+
 }
