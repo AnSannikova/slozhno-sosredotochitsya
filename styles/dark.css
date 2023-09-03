@@ -19,6 +19,7 @@
 
 .theme_dark .title-decor {
   color: var(--title-color-dark-theme, #000028);
+  background-color: var(--accent-color, #FF0070);
 }
 
 .theme_dark .decorative-lettering {
@@ -44,6 +45,13 @@
   color: var(--accent-color, #FF0070);
 }
 
+.theme_dark .section__link {
+  text-shadow: 2px 2px 0 var(--accent-color, #FF0070);
+}
+
+.theme_dark .gallery__title {
+  color: var(--title-color-dark-theme, #000028);
+}
 
 @media (prefers-color-scheme: dark) {
 
