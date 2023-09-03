@@ -96,6 +96,9 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   line-height: 0.83;
+}
+
+.header__title {
   text-shadow: 4px 4px 0 var(--accent-color, #FF8DCB);
 }
 
@@ -229,9 +232,9 @@
     margin-block: 60px;
   }
 
-  .grid-container, .gallery {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  .grid-container {
+    grid-template-columns: minmax(236px, 1fr) repeat(2, 1fr)
+  } 
 
   .flex-conteiner {
     grid-column: span 2;
@@ -246,6 +249,7 @@
   }
 
   .gallery {
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--main-gap, 20px);
   }
 
@@ -277,4 +281,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer__title {
+  text-shadow: 2px 2px 0 var(--accent-color, #FF8DCB);
 }

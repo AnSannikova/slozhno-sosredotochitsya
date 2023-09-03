@@ -9,7 +9,7 @@
   color: var(--accent-color, #FF0070);
 }
 
-.theme_dark .title-big {
+.theme_dark .header__title {
   text-shadow: 4px 4px 0 var(--accent-color, #FF0070);
 }
 
@@ -51,6 +51,10 @@
 
 .theme_dark .gallery__title {
   color: var(--title-color-dark-theme, #000028);
+}
+
+.theme_dark .footer__title {
+  text-shadow: 2px 2px 0 var(--accent-color, #FF0070);
 }
 
 @media (prefers-color-scheme: dark) {
