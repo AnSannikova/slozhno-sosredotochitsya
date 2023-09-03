@@ -23,6 +23,10 @@
   color: var(--accent-color, #FF0070);
 }
 
+.theme_dark .header__theme-menu-button:hover {
+  border: 1px solid rgba(255, 0, 112, 0.40);
+}
+
 .theme_dark .title-decor {
   color: var(--title-color-dark-theme, #000028);
   background-color: var(--accent-color, #FF0070);
