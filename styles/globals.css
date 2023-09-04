@@ -9,10 +9,8 @@ body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
   margin: 0 auto;
+  background-color: #FFF1F7;
 }
-
-/* Фоновое изображение задано тегу body через класс .page в файле style.css, как было рекомендовано в задании.
-Спасибо за приятный комментарий к работе :) */
 
 h1,
 h2,
