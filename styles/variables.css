@@ -3,7 +3,7 @@
   --accent-color: #FF8DCB;
   --main-title-color: #FFC2E6;
   --title-color-dark-theme: #000028;
-  --main-font: 'IBM Plex mono';
+  --main-font: 'IBM Plex mono', monospace;
   --main-font-size: 18px;
   --section-margin-block-end: 50px;
   --main-gap: 20px;
