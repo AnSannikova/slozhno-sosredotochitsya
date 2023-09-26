@@ -2,78 +2,13 @@
   --text-color: #F1B2CE;
   --accent-color: #FF0070;
   --main-title-color: #DB00FF;
-  --title-color-dark-theme: #000028;
-  background-image: url(../images/cover-image-dark.png);
-  background-color: var(--title-color-dark-theme, #000028);
-  color: var(--text-color, #F1B2CE);
-}
-
-.theme_dark .decorated-zone {
-  color: var(--accent-color, #FF0070);
-}
-
-.theme_dark .title-big {
-  color: var(--main-title-color, #DB00FF);
-}
-
-.theme_dark .header__title {
-  text-shadow: 4px 4px 0 var(--accent-color, #FF0070);
-}
-
-.theme_dark .header__theme-menu-button {
-  color: var(--accent-color, #FF0070);
-}
-
-.theme_dark .header__theme-menu-button:hover {
-  border: 1px solid rgba(255, 0, 112, 0.40);
-}
-
-.theme_dark .title-decor {
-  color: var(--title-color-dark-theme, #000028);
-  background-color: var(--accent-color, #FF0070);
-}
-
-.theme_dark .decorative-lettering {
-  opacity: 1;
-  visibility: visible;
-  inset-block-start: 10px;
-  inset-inline-end: 9px;
-  color: var(--accent-color, #FF0070);
-}
-
-.decorative-lettering::after {
-  content: '';
-  display: inline-block;
-  block-size: 9px;
-  inline-size: 9px;
-  border-radius: 50%;
-  margin-inline-start: 10px;
-  background: var(--accent-color, #FF0070);
-  filter: drop-shadow(0 0 4px var(--accent-color, #FF0070));
-} 
-
-@media (width >= 768px) {
-
-  .page.theme_dark .decorative-lettering {
-    inset-block-start: 20px;
-  }
-
-}
-
-.theme_dark .section__title {
-  color: var(--accent-color, #FF0070);
-}
-
-.theme_dark .text-block__link {
-  text-shadow: 2px 2px 0 var(--accent-color, #FF0070);
-}
-
-.theme_dark .gallery__title {
-  color: var(--title-color-dark-theme, #000028);
-}
-
-.theme_dark .footer__title {
-  text-shadow: 2px 2px 0 var(--accent-color, #FF0070);
+  --background-image: url(../images/cover-image-dark.png);
+  --background-color: var(--title-color-dark-theme, #000028);
+  --menu-button-color: var(--accent-color, #FF0070);
+  --decor-elements-color: var(--accent-color, #FF0070);
+  --button-hover-color: #FF007066;
+  --title-color: #000028;
+  --visibility-decor-element: 1;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -82,6 +17,13 @@
     --text-color: #F1B2CE;
     --accent-color: #FF0070;
     --main-title-color: #DB00FF;
-  }
+    --background-image: url(../images/cover-image-dark.png);
+    --background-color: var(--title-color-dark-theme, #000028);
+    --menu-button-color: var(--accent-color, #FF0070);
+    --decor-elements-color: var(--accent-color, #FF0070);
+    --button-hover-color: #FF007066;
+    --title-color: #000028;
+    --visibility-decor-element: 1;
+  }  
 
 }
