@@ -1,3 +1,3 @@
 # slozhno-sosredotochitsya
 Проект "Сложно сосредоточиться"  
-https://github.com/AnSannikova/slozhno-sosredotochitsya
+https://ansannikova.github.io/slozhno-sosredotochitsya/
