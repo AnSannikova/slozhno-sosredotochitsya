@@ -1,29 +1,64 @@
 .page.theme_dark {
-  --text-color: #F1B2CE;
-  --accent-color: #FF0070;
-  --main-title-color: #DB00FF;
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --main-title-color: #db00ff;
   --background-image: url(../images/cover-image-dark.png);
   --background-color: var(--title-color-dark-theme, #000028);
-  --menu-button-color: var(--accent-color, #FF0070);
-  --decor-elements-color: var(--accent-color, #FF0070);
-  --button-hover-color: #FF007066;
+  --menu-button-color: var(--accent-color, #ff0070);
+  --decor-elements-color: var(--accent-color, #ff0070);
+  --button-hover-color: #ff007066;
   --title-color: #000028;
-  --visibility-decor-element: 1;
+}
+
+.decorative-lettering {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  inset-block-start: 10px;
+  inset-inline-end: 9px;
+  color: var(--accent-color, #ff0070);
+}
+
+.decorative-lettering::after {
+  content: '';
+  display: inline-block;
+  block-size: 9px;
+  inline-size: 9px;
+  border-radius: 50%;
+  margin-inline-start: 10px;
+  background: var(--accent-color, #ff0070);
+  filter: drop-shadow(0 0 4px var(--accent-color, #ff0070));
+}
+
+@media (width >= 768px) {
+
+  .decorative-lettering {
+    inset-block-start: 20px;
+  }
+
+}
+
+.theme_dark .decorative-lettering {
+  opacity: 1;
+  visibility: visible;
 }
 
 @media (prefers-color-scheme: dark) {
 
   :root {
-    --text-color: #F1B2CE;
-    --accent-color: #FF0070;
-    --main-title-color: #DB00FF;
+    --text-color: #f1b2ce;
+    --accent-color: #ff0070;
+    --main-title-color: #db00ff;
     --background-image: url(../images/cover-image-dark.png);
     --background-color: var(--title-color-dark-theme, #000028);
-    --menu-button-color: var(--accent-color, #FF0070);
-    --decor-elements-color: var(--accent-color, #FF0070);
-    --button-hover-color: #FF007066;
+    --menu-button-color: var(--accent-color, #ff0070);
+    --decor-elements-color: var(--accent-color, #ff0070);
+    --button-hover-color: #ff007066;
     --title-color: #000028;
-    --visibility-decor-element: 1;
-  }  
+  }
 
+  .decorative-lettering {
+    opacity: 1;
+    visibility: visible;
+  }
 }
